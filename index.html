@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_95814264467de56fe6ddb7a555741d42 {
+                #map_78aad541bc08262468ce6c89524de04f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_95814264467de56fe6ddb7a555741d42" ></div>
+            <div class="folium-map" id="map_78aad541bc08262468ce6c89524de04f" ></div>
         
 </body>
 <script>
     
     
-            var map_95814264467de56fe6ddb7a555741d42 = L.map(
-                "map_95814264467de56fe6ddb7a555741d42",
+            var map_78aad541bc08262468ce6c89524de04f = L.map(
+                "map_78aad541bc08262468ce6c89524de04f",
                 {
                     center: [8.0, 8.0],
                     crs: L.CRS.EPSG3857,
@@ -60,45 +60,53 @@
 
         
     
-            var tile_layer_cc0d63127d1e7af37bd37ea33abc1307 = L.tileLayer(
+            var tile_layer_d4a0cdced4a5aece6689b54245a86378 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_95814264467de56fe6ddb7a555741d42);
+            ).addTo(map_78aad541bc08262468ce6c89524de04f);
         
     
-            var marker_c37882fd457e72f720b018c69d960200 = L.marker(
+            var marker_a10ed7d32e18a3616ad819622bcc1fa6 = L.marker(
                 [8.0, 8.0],
                 {}
-            ).addTo(map_95814264467de56fe6ddb7a555741d42);
+            ).addTo(map_78aad541bc08262468ce6c89524de04f);
         
     
-            var icon_09522a925549360015f7165fd122382d = L.AwesomeMarkers.icon(
+            var icon_93df236484c40e519c366e8b23369183 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_c37882fd457e72f720b018c69d960200.setIcon(icon_09522a925549360015f7165fd122382d);
+            marker_a10ed7d32e18a3616ad819622bcc1fa6.setIcon(icon_93df236484c40e519c366e8b23369183);
         
     
-        var popup_e7b423e85b588031578c2be2bf176186 = L.popup({"maxWidth": "100%"});
+        var popup_6a8d31a43df03eba8a7928029124dd79 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_80bdfec5f272d1e3d80e7f4a9cdcdd8d = $(`<div id="html_80bdfec5f272d1e3d80e7f4a9cdcdd8d" style="width: 100.0%; height: 100.0%;"> Latitude: 8, Longitude: 8</div>`)[0];
-                popup_e7b423e85b588031578c2be2bf176186.setContent(html_80bdfec5f272d1e3d80e7f4a9cdcdd8d);
+                var html_1c7224e62da6b986204e1fa4af14e190 = $(`<div id="html_1c7224e62da6b986204e1fa4af14e190" style="width: 100.0%; height: 100.0%;"> Latitude: 8, Longitude: 8</div>`)[0];
+                popup_6a8d31a43df03eba8a7928029124dd79.setContent(html_1c7224e62da6b986204e1fa4af14e190);
             
         
 
-        marker_c37882fd457e72f720b018c69d960200.bindPopup(popup_e7b423e85b588031578c2be2bf176186)
+        marker_a10ed7d32e18a3616ad819622bcc1fa6.bindPopup(popup_6a8d31a43df03eba8a7928029124dd79)
         ;
 
         
     
     
-            marker_c37882fd457e72f720b018c69d960200.bindTooltip(
+            marker_a10ed7d32e18a3616ad819622bcc1fa6.bindTooltip(
                 `<div>
                      <i>Votre proche est en difficulté ici !<i>
                  </div>`,
                 {"sticky": true}
             );
         
+
+
+            if (!localStorage.getItem("loaded")) {
+  localStorage.setItem("loaded", "true");
+  location.reload();
+
+}
 </script>
+
 </html>
